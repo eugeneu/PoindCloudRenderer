@@ -1,10 +1,15 @@
-PCRendererTests
-PCRendererUITests
-
 
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+
+## OS X files
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+*.swp
 
 ## Build generated
 build/
@@ -26,14 +31,11 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+*.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
 
 # Swift Package Manager
 #
@@ -49,6 +51,8 @@ playground.xcworkspace
 #
 # Pods/
 
+Pods/
+
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
@@ -63,9 +67,23 @@ Carthage/Build
 # For more information about the recommended setup visit:
 # https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
 
+# fastlane
+# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
 fastlane/report.xml
+fastlane/Preview.html
 fastlane/screenshots
+fastlane/test_output
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+Sign up for free
 
 
-# Mac
-.DS_Store
+### Xcode ###
+build
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+
+
+
